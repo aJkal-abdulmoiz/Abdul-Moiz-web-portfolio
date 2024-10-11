@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Oxygen';
+            background-color: darkslategrey; 
+            color: white; 
+        }
+
+        .profile-div{
+            height: 25px;
+            text-align: center;
+            background-color: #333;
+            color: whitesmoke;
+        }
+
+        .container {
+            margin-top: 20px !important;
+            max-width: 600px; 
+            margin: auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333; 
+            color: white;
+        }
+
+        input[type="submit"] {
+            background-color: darkcyan; 
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color:darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">
+        <div class="profile-div">
+            <p>Name: Abdul Moiz | Roll No: 221028</p>
+          </div>
+    </a>
+
+<div class="container">
+    
+    <h1>Contact Me</h1>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="">--Please choose an option--</option>
+            <option value="web-development">Web Development</option>
+            <option value="graphic-design">Graphic Design</option>
+            <option value="seo">SEO Services</option>
+            <option value="content-writing">Content Writing</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</div>
+
+</body>
+</html>
